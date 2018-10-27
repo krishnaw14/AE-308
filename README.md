@@ -10,3 +10,9 @@ Consider the plant given below.
 Design a suitable controller with root locus, along with gain K, to achieve the closed damping of 0.5 and real
 part of non-dominant poles to be at least 10 times the real part of the non-dominant poles, while maintaining
 the 2% settling time less than 4 sec. What are compensated phase margin and the bandwidth?
+
+To be uploaded:
+
+- [ ] Report describing the entire design process, analysis and ideas
+- [ ] Graphs made for the report
+- [ ] Matlab scripts written to generate the graohs for testing the designs and verify the results
