@@ -13,6 +13,7 @@ the 2% settling time less than 4 sec. What are compensated phase margin and the 
 
 To be uploaded:
 
+- [ ] Design the controller
 - [ ] Report describing the entire design process, analysis and ideas
 - [ ] Graphs made for the report
 - [ ] Matlab scripts written to generate the graohs for testing the designs and verify the results
