@@ -1,5 +1,5 @@
-% To analyse the uncompensated plant characterestics to be later compared
-% with the compensated plant. 
+% To analyse the uncompensated plant characterestics that will be later 
+% compared with the compensated plant. 
 
 s = tf('s');
 G = 1/((s+1)*(s+2)*(s+4)*(s+6));
@@ -23,7 +23,7 @@ disp(stepinfo(feedback(G,1)));
 fprintf('\n');
 disp(bandwidth(G));
 fprintf('\n');
-fprintf('Closed Loop poles: ');
+fprintf('Closed Loop poles: \n');
 disp(pole(feedback(G,1)));
 fprintf('\n');
 

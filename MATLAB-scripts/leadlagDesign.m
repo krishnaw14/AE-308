@@ -1,3 +1,6 @@
+% Design of the controller using a simpler model of 2 compensators 
+% The equations and the working of this program 
+
 s = tf('s');
 
 plant = 1/((s+1)*(s+2)*(s+4)*(s+6));
@@ -8,7 +11,7 @@ plant = 1/((s+1)*(s+2)*(s+4)*(s+6));
 % [p2, K] = get_leadlagParameters(p1, -55);
 
 count = 1;
-parameters= zeros(800, 8);
+parameters= zeros(10, 9);
 
 for p1 = 5:0.25:30
     for phase = 52:0.25:82
@@ -26,8 +29,12 @@ for p1 = 5:0.25:30
         ratio = sorted_real_part(2)/sorted_real_part(1);
         ratio_error = abs(10-ratio)/10;
         
+        if ratio>10
+            ratio_error = 0;
+        end
+        
         if damp_error < 0.15 && ratio_error < 0.15
-        parameters(count, :) = [p1, phase, p2, K, zeta, ratio, damp_error, ratio_error];
+        parameters(count, :) = [p1, phase, p2, K, zeta, ratio, damp_error, ratio_error, ratio_error+damp_error];
         count = count+1;
         end
     end
