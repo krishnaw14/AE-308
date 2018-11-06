@@ -11,4 +11,4 @@ Design a suitable controller with root locus, along with gain K, to achieve the 
 part of non-dominant poles to be at least 10 times the real part of the non-dominant poles, while maintaining
 the 2% settling time less than 4 sec. What are compensated phase margin and the bandwidth?
 
-The matlab code, plots and detailed report of the design process is uploaded.
+The matlab code, plots and detailed report of the design process has been uploaded. The required specifiactions were achieved by two controllers - one used 4 lag compensators in cascade and other used a lag and a lead compensator in cascade. The first controller achived a better accuracy and response time and but the second controller has a simpler design procedure.
