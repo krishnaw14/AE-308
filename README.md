@@ -15,4 +15,4 @@ the 2% settling time less than 4 sec. What are compensated phase margin and the 
 
 ### Solution 
 
-The matlab code, plots and detailed report of the design process has been uploaded. The required specifiactions were achieved by two controllers - one used 4 lag compensators in cascade and other used a lag and a lead compensator in cascade. The first controller achived a better accuracy and response time and but the second controller has a simpler design procedure.
+The matlab code, plots and detailed report of the design process have been uploaded. The required specifiactions were achieved by two controllers - one used 4 lag compensators in cascade and other used a lag and a lead compensator in cascade. The first controller achived a better accuracy and response time and but the second controller has a simpler design procedure.
